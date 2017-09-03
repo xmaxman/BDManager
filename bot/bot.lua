@@ -1,9 +1,9 @@
 package.path = package.path..';.luarocks/share/lua/5.2/?.lua;.luarocks/share/lua/5.2/?/init.lua'
 package.cpath = package.cpath..';.luarocks/lib/lua/5.2/?.so'
-bot_token = "Token"
+bot_token = "343332204:AAEvaTheHU_iy4KZgak1y5XG77MECgV3Xi4"
 send_api = "https://api.telegram.org/bot"..bot_token
-BeyondTeam = -1001011351482
-sudo_id = 157059515
+BeyondTeam = -1001141295085
+sudo_id = 378496552
 http = require('socket.http')
 https = require('ssl.https')
 URL = require('socket.url')
@@ -188,7 +188,7 @@ function create_config( )
 	io.write('\n\27[1;33m>> Input your Telegram ID for set Sudo :\27[0;39;49m')
 	local SUDO = tonumber(io.read())
 if not tostring(SUDO):match('%d+') then
-    SUDO = 157059515
+    SUDO = 378496552
   end
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
@@ -200,7 +200,7 @@ if not tostring(SUDO):match('%d+') then
     "banhammer",
     "fun"
     },
-    sudo_users = {157059515, SUDO},--Sudo users
+    sudo_users = {378496552, SUDO},--Sudo users
     master_id = SUDO, 
     admins = {},
     disabled_channels = {},
