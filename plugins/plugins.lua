@@ -22,7 +22,7 @@ local function plugin_exists( name )
 end
 
 local function list_all_plugins(only_enabled)
-  local tmp = '\n\n[BeyondTeam](Telegram.Me/BeyondTeam)'
+  local tmp = '\n\n[BeyondTeam](Telegram.Me/NationalTM)'
   local text = ''
   local nsum = 0
   for k, v in pairs( plugins_names( )) do
@@ -43,7 +43,7 @@ local function list_all_plugins(only_enabled)
       text = text..nsum..'.'..status..' '..check_markdown(v)..' \n'
     end
   end
-  local text = text..'\n\n'..nsum..' *📂plugins installed*\n\n'..nact..' _✔️plugins enabled_\n\n'..nsum-nact..' _❌plugins disabled_\n\n[BeyondTeam](Telegram.Me/BeyondTeam)'
+  local text = text..'\n\n'..nsum..' *📂plugins installed*\n\n'..nact..' _✔️plugins enabled_\n\n'..nsum-nact..' _❌plugins disabled_\n\n[National TM](Telegram.Me/NationalTM)'
   return text
 end
 
@@ -68,7 +68,7 @@ local function list_plugins(only_enabled)
      -- text = text..v..'  '..status..'\n'
     end
   end
-  local text = text.."\n_🔃All Plugins Reloaded_\n\n"..nact.." *✔️Plugins Enabled*\n"..nsum.." *📂Plugins Installed*\n\n[BeyondTeam](Telegram.Me/BeyondTeam)"
+  local text = text.."\n_🔃All Plugins Reloaded_\n\n"..nact.." *✔️Plugins Enabled*\n"..nsum.." *📂Plugins Installed*\n\n[National TM](Telegram.Me/NationalTM)"
 return text
 end
 
